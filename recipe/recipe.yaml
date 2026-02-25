@@ -25,7 +25,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - anyio >=4.7.0,<5
-    - async-lru >=2.0.5,<3
     - markdown >=3.8,<4
 
 tests:
