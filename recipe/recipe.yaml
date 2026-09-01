@@ -1,8 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.13.1"
-  python_min: "3.11"
+  version: "0.13.3"
 
 package:
   name: htmy
@@ -10,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/h/htmy/htmy-${{ version }}.tar.gz
-    sha256: dc89cf64ec10c0ffc46070122fdb7eaab7a6f95c1bddbaf521cbdc8cc9aca85c
+    sha256: 8d7a534a6c2fbadd9569c1017d725da8c1941e1aa4adfaaf47fe2ac0ad61e3e6
 
 build:
   number: 0
@@ -33,7 +32,9 @@ tests:
       imports:
         - htmy
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: MIT
