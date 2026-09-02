@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.13.3"
+  version: "0.13.4"
 
 package:
   name: htmy
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/h/htmy/htmy-${{ version }}.tar.gz
-    sha256: 8d7a534a6c2fbadd9569c1017d725da8c1941e1aa4adfaaf47fe2ac0ad61e3e6
+    sha256: 66b5c0209aadbb36b6b5f6bf96cd6c58a2daf662ff8832760204c55fedb268c4
 
 build:
   number: 0
